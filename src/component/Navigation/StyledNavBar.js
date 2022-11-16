@@ -92,7 +92,6 @@ export const NavBtn = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 0 20px 0px 0px;
-  border: 1px solid red;
   width: 15rem;
 
   // // 3rd nav
