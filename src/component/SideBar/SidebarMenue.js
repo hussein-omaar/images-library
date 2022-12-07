@@ -20,21 +20,21 @@ function SidebarMenue({ isOpen, toggle }) {
 
       <SidebarWrapper>
         <SideMenue>
-          <SidebarLink to="features" onClick={toggle}>
+          <SidebarLink to="/features" onClick={toggle}>
             Features
           </SidebarLink>
-          <SidebarLink to="pricing" onClick={toggle}>
+          <SidebarLink to="/pricing" onClick={toggle}>
             Pricing
           </SidebarLink>
-          <SidebarLink to="community" onClick={toggle}>
+          <SidebarLink to="/community" onClick={toggle}>
             Cummunity
           </SidebarLink>
-          <SidebarLink to="support" onClick={toggle}>
+          <SidebarLink to="/support" onClick={toggle}>
             Support
           </SidebarLink>
         </SideMenue>
         <SidebarBtn>
-          <SidebarBtnLink to="register">Register</SidebarBtnLink>
+          <SidebarBtnLink to="/register">Register</SidebarBtnLink>
         </SidebarBtn>
       </SidebarWrapper>
     </SidebarContainer>
