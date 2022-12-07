@@ -61,6 +61,17 @@ export const NavLogo = styled(LinkR)`
 
 
 
+export const HamburgerIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0 24px;
+  }
+`;
+
 
 export const NavItems = [
 
@@ -79,6 +90,10 @@ export const UnorderedList = styled.ul`
 display: flex;
 list-style-type: none;
 gap: 1.5rem;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 
 
 
@@ -115,7 +130,15 @@ export const NavBtnWraper = styled.div`
 
 
 display: flex;
-gap: 0.5rem
+gap: 0.5rem;
+
+
+
+
+@media screen and (max-width: 768px) {
+  display: none;
+}
+
 
 
 

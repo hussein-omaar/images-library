@@ -14,6 +14,7 @@ import {
   NavBtnWraper,
   LoginBtn,
   RegisterBtn,
+  HamburgerIcon,
 } from "./StyledNavBar";
 
 // import {
@@ -32,10 +33,17 @@ import {
 function Navbar({ toggle }) {
   return (
     <>
+
+    
       {/* First Navigation */}
       <Header>
         <HeaderWrapper>
           <NavLogo to="/">Logo</NavLogo>
+
+          <HamburgerIcon onClick={toggle}>
+            <FaBars />
+          </HamburgerIcon>
+
           <UnorderedList>
             {NavItems &&
               NavItems.map((ele) => {
@@ -49,14 +57,15 @@ function Navbar({ toggle }) {
           </UnorderedList>
 
           <NavBtnWraper>
-            {/* <LoginBtn to="/login">Login</LoginBtn> */}
             <RegisterBtn to="/register">Register</RegisterBtn>
           </NavBtnWraper>
         </HeaderWrapper>
       </Header>
 
       {/* Second Navigation */}
-      <Header>
+
+
+      {/* <Header>
         <HeaderWrapper>
           <NavLogo to="/">Logo</NavLogo>
 
@@ -74,15 +83,14 @@ function Navbar({ toggle }) {
             </UnorderedList>
 
             <NavBtnWraper>
-              {/* <LoginBtn to="/login">Login</LoginBtn> */}
               <RegisterBtn to="/register">Register</RegisterBtn>
             </NavBtnWraper>
           </Align>
         </HeaderWrapper>
-      </Header>
+      </Header> */}
 
       {/* Third Navigation */}
-      <Header>
+      {/* <Header>
         <HeaderWrapper>
           <Align align="left">
             <NavLogo to="/">Logo</NavLogo>
@@ -105,11 +113,11 @@ function Navbar({ toggle }) {
             <RegisterBtn to="/register">Register</RegisterBtn>
           </NavBtnWraper>
         </HeaderWrapper>
-      </Header>
+      </Header> */}
 
       {/* Fourth Navigation */}
 
-      <Header>
+      {/* <Header>
         <HeaderWrapper>
           <NavLogo to="/">Logo</NavLogo>
           <UnorderedList>
@@ -124,7 +132,7 @@ function Navbar({ toggle }) {
               })}
           </UnorderedList>
         </HeaderWrapper>
-      </Header>
+      </Header> */}
 
 
 
