@@ -1,6 +1,6 @@
 {
-  "homepage": "http://hussein-omaar.github.io/images-library",
-  "name": "images-library",
+  "homepage": "http://hussein-omaar.github.io/photos-gallery",
+  "name": "photos-gallery",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
