@@ -44,7 +44,14 @@ justify-content: ${(props) =>  (props.align === "left" ? "flex-start" : (props.a
 align-items: center;
 width: 50%;
 
-// gap: ${(props) =>  (props.align === "left" ? "36%" : "46%" ) }
+
+@media screen and (max-width: 768px) {
+
+
+  display: ${(props) => (props.align === "right" ? "none" :  "block")};
+}
+
+
 
 `
 

@@ -33,8 +33,6 @@ import {
 function Navbar({ toggle }) {
   return (
     <>
-
-    
       {/* First Navigation */}
       <Header>
         <HeaderWrapper>
@@ -64,10 +62,13 @@ function Navbar({ toggle }) {
 
       {/* Second Navigation */}
 
-
-      {/* <Header>
+      <Header>
         <HeaderWrapper>
           <NavLogo to="/">Logo</NavLogo>
+
+          <HamburgerIcon onClick={toggle}>
+            <FaBars />
+          </HamburgerIcon>
 
           <Align align="right">
             <UnorderedList>
@@ -87,10 +88,10 @@ function Navbar({ toggle }) {
             </NavBtnWraper>
           </Align>
         </HeaderWrapper>
-      </Header> */}
+      </Header>
 
       {/* Third Navigation */}
-      {/* <Header>
+      <Header>
         <HeaderWrapper>
           <Align align="left">
             <NavLogo to="/">Logo</NavLogo>
@@ -108,18 +109,25 @@ function Navbar({ toggle }) {
             </UnorderedList>
           </Align>
 
+          <HamburgerIcon onClick={toggle}>
+            <FaBars />
+          </HamburgerIcon>
+
           <NavBtnWraper>
             <LoginBtn to="/login">Login</LoginBtn>
             <RegisterBtn to="/register">Register</RegisterBtn>
           </NavBtnWraper>
         </HeaderWrapper>
-      </Header> */}
+      </Header>
 
       {/* Fourth Navigation */}
 
-      {/* <Header>
+      <Header>
         <HeaderWrapper>
           <NavLogo to="/">Logo</NavLogo>
+          <HamburgerIcon onClick={toggle}>
+            <FaBars />
+          </HamburgerIcon>
           <UnorderedList>
             {NavItems &&
               NavItems.map((ele) => {
@@ -132,7 +140,7 @@ function Navbar({ toggle }) {
               })}
           </UnorderedList>
         </HeaderWrapper>
-      </Header> */}
+      </Header>
 
 
 
@@ -149,27 +157,7 @@ function Navbar({ toggle }) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      
 
       {/* this is the old design that doesnt contain props */}
 
