@@ -229,9 +229,7 @@ export const LoginBtn = styled(LinkR)`
 
 
 
-
-
-
+   {/* this is the old design that doesnt contain props */}
 
 // export const Nav = styled.nav`
 //   height: 80px;

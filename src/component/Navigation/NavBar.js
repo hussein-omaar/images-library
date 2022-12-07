@@ -107,6 +107,8 @@ function Navbar({ toggle }) {
         </HeaderWrapper>
       </Header>
 
+      {/* Fourth Navigation */}
+
       <Header>
         <HeaderWrapper>
           <NavLogo to="/">Logo</NavLogo>
@@ -121,7 +123,6 @@ function Navbar({ toggle }) {
                 );
               })}
           </UnorderedList>
-
         </HeaderWrapper>
       </Header>
 
@@ -160,6 +161,9 @@ function Navbar({ toggle }) {
 
 
 
+
+
+      {/* this is the old design that doesnt contain props */}
 
       {/* <Nav>
         <NavbarContainer>
