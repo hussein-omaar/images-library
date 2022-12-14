@@ -14,7 +14,6 @@ justify-content: center;
 align-items: center;
 
 
-
 `
 
 export const HeaderWrapper = styled.div`
@@ -26,7 +25,7 @@ export const HeaderWrapper = styled.div`
   height: 80px;
   width: 90%;
   background: #fff;
- 
+
 
 
 

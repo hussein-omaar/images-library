@@ -44,9 +44,9 @@ function Navbar({ toggle }) {
 
           <UnorderedList>
             {NavItems &&
-              NavItems.map((ele) => {
+              NavItems.map((ele , index) => {
                 return (
-                  <ListItems>
+                  <ListItems key={index}>
                     {" "}
                     <NavLinks to={ele.url}>{ele.label}</NavLinks>{" "}
                   </ListItems>
@@ -62,7 +62,7 @@ function Navbar({ toggle }) {
 
       {/* Second Navigation */}
 
-      <Header>
+      {/* <Header>
         <HeaderWrapper>
           <NavLogo to="/">Logo</NavLogo>
 
@@ -73,9 +73,9 @@ function Navbar({ toggle }) {
           <Align align="right">
             <UnorderedList>
               {NavItems &&
-                NavItems.map((ele) => {
+                NavItems.map((ele , index) => {
                   return (
-                    <ListItems>
+                    <ListItems key={index}>
                       {" "}
                       <NavLinks to={ele.url}>{ele.label}</NavLinks>{" "}
                     </ListItems>
@@ -88,21 +88,22 @@ function Navbar({ toggle }) {
             </NavBtnWraper>
           </Align>
         </HeaderWrapper>
-      </Header>
+      </Header> */}
 
       {/* Third Navigation */}
-      <Header>
+      {/* <Header>
         <HeaderWrapper>
           <Align align="left">
             <NavLogo to="/">Logo</NavLogo>
 
             <UnorderedList>
               {NavItems &&
-                NavItems.map((ele) => {
+                NavItems.map((ele , index) => {
                   return (
-                    <ListItems>
+                    <ListItems key={index}>
                       {" "}
                       <NavLinks to={ele.url}>{ele.label}</NavLinks>{" "}
+                      
                     </ListItems>
                   );
                 })}
@@ -118,11 +119,11 @@ function Navbar({ toggle }) {
             <RegisterBtn to="/register">Register</RegisterBtn>
           </NavBtnWraper>
         </HeaderWrapper>
-      </Header>
+      </Header> */}
 
       {/* Fourth Navigation */}
 
-      <Header>
+      {/* <Header>
         <HeaderWrapper>
           <NavLogo to="/">Logo</NavLogo>
           <HamburgerIcon onClick={toggle}>
@@ -130,9 +131,9 @@ function Navbar({ toggle }) {
           </HamburgerIcon>
           <UnorderedList>
             {NavItems &&
-              NavItems.map((ele) => {
+              NavItems.map((ele , index) => {
                 return (
-                  <ListItems>
+                  <ListItems  key={index}>
                     {" "}
                     <NavLinks to={ele.url}>{ele.label}</NavLinks>{" "}
                   </ListItems>
@@ -140,7 +141,7 @@ function Navbar({ toggle }) {
               })}
           </UnorderedList>
         </HeaderWrapper>
-      </Header>
+      </Header> */}
 
 
 

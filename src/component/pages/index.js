@@ -19,7 +19,7 @@ function Home() {
     <>
       <SidebarMenue isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      {/* <Hero/> */}
+      <Hero/>
  
     </>
   );
