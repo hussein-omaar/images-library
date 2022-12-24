@@ -15,7 +15,7 @@ function SidebarMenue({ isOpen, toggle }) {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
-        <CloseIcon />
+        <CloseIcon  />
       </Icon>
 
       <SidebarWrapper>
