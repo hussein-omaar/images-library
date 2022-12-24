@@ -13,8 +13,9 @@ export const SidebarContainer = styled.aside`
   top: 0;
   left: 0;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0%")};
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
-  // top: 0;
+  // top: ${({ isOpen }) => (isOpen ? "0%" : "-100%")};
+  // top: ${(props) => (props.isOpen ? "0%" : "-100%")}
+ 
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -47,6 +48,8 @@ export const SideMenue = styled.ul`
     grid-template-rows: repeat(6, 60px);
   }
 `;
+
+
 
 export const SidebarLink = styled(LinkR)`
   display: flex;
